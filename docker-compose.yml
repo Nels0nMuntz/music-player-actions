@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  music-player:
+    image: music-player-image
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
