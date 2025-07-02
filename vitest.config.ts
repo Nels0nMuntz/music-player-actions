@@ -5,6 +5,7 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./test/integration/setup.ts'],
     include: ['test/unit/**/*.test.ts', 'test/integration/**/*.test.ts'],
+    exclude: ['test/e2e/**/*.test.ts'],
   },
   resolve: {
     alias: {
