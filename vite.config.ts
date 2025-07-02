@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -13,6 +14,13 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: true,
+    host: true,
+    strictPort: true,
+  },
+  preview: {
+    port: 3000,
+    host: true,
+    open: false,
+    strictPort: true,
   },
 });
