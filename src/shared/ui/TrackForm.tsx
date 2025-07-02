@@ -116,7 +116,7 @@ export const TrackForm: React.FC<Props> = ({ values, genres, isSubmitting, onSub
             variant="default"
             disabled={isSubmitting}
             className="min-w-24"
-            data-testid="submit-button"
+            data-testid="submit-button-changed"
           >
             {isSubmitting ? <Loader2 className="animate-spin" /> : "Submit"}
           </Button>
