@@ -1,2 +1,7 @@
 /node_modules/
 /dist/
+
+# test
+/coverage/  
+/playwright-report/
+/test-results/
